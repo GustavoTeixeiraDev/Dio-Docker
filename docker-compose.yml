@@ -1,0 +1,9 @@
+services:
+  web:
+    image: httpd:2.4-alpine
+    container_name: apache-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/usr/local/apache2/htdocs:ro   # mantenha só esta
+    restart: unless-stopped
