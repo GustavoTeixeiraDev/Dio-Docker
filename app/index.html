@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Site no Apache + Docker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>🚀 Hello, Docker + Apache!</h1>
+    <p>HTML + CSS + JS rodando em um container Apache via Docker Compose.</p>
+    <button id="btn-acao">Clique para ação JS</button>
+  </header>
+
+  <main class="container grid">
+    <section>
+      <h2>Sobre</h2>
+      <p>
+        Esta página estática é servida pelo Apache no container. Edite <code>app/</code> e atualize!
+      </p>
+    </section>
+    <section>
+      <h2>Demo dinâmica</h2>
+      <div id="caixa-dinamica" class="card">Nada por enquanto…</div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Feito com ❤️ usando Docker, Apache e muita vontade de aprender.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
